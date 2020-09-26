@@ -3,9 +3,7 @@ package co.micronano.gradhack;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.animation.BounceInterpolator;
 import android.widget.Toast;
 
 import com.mapbox.android.core.permissions.PermissionsListener;
@@ -13,8 +11,6 @@ import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.location.LocationComponent;
 import com.mapbox.mapboxsdk.location.LocationComponentActivationOptions;
-import com.mapbox.mapboxsdk.location.LocationComponentOptions;
-import com.mapbox.mapboxsdk.location.OnCameraTrackingChangedListener;
 import com.mapbox.mapboxsdk.location.modes.CameraMode;
 import com.mapbox.mapboxsdk.location.modes.RenderMode;
 import com.mapbox.mapboxsdk.maps.MapView;
@@ -24,7 +20,7 @@ import com.mapbox.mapboxsdk.maps.Style;
 
 import java.util.List;
 
-public class LocatePharm extends AppCompatActivity implements
+public class LocateGP extends AppCompatActivity implements
         OnMapReadyCallback, PermissionsListener {
 
     private MapView mapView;
@@ -35,7 +31,7 @@ public class LocatePharm extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Mapbox.getInstance(this, getString(R.string.mapbox_access_token));
-        setContentView(R.layout.activity_locate_pharm);
+        setContentView(R.layout.activity_locate_g_p);
         getSupportActionBar().hide();
 
         mapView = findViewById(R.id.mapView);
@@ -77,41 +73,41 @@ public class LocatePharm extends AppCompatActivity implements
         super.onStart();
         mapView.onStart();
     }
-        @Override
-        protected void onResume() {
-            super.onResume();
-            mapView.onResume();
-        }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mapView.onResume();
+    }
 
-        @Override
-        protected void onPause() {
-            super.onPause();
-            mapView.onPause();
-        }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
 
-        @Override
-        protected void onStop() {
-            super.onStop();
-            mapView.onStop();
-        }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mapView.onStop();
+    }
 
-        @Override
-        protected void onSaveInstanceState(Bundle outState) {
-            super.onSaveInstanceState(outState);
-            mapView.onSaveInstanceState(outState);
-        }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        mapView.onSaveInstanceState(outState);
+    }
 
-        @Override
-        public void onLowMemory() {
-            super.onLowMemory();
-            mapView.onLowMemory();
-        }
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mapView.onLowMemory();
+    }
 
-        @Override
-        protected void onDestroy() {
-            super.onDestroy();
-            mapView.onDestroy();
-        }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
 
     @Override
     public void onExplanationNeeded(List<String> permissionsToExplain) {
@@ -137,7 +133,7 @@ public class LocatePharm extends AppCompatActivity implements
 
     @Override
     public void onMapReady(@NonNull MapboxMap mapboxMap) {
-        LocatePharm.this.mapboxMap = mapboxMap;
+        LocateGP.this.mapboxMap = mapboxMap;
 
         mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/mapbox/cjerxnqt3cgvp2rmyuxbeqme7"),
                 new Style.OnStyleLoaded() {
