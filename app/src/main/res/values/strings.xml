@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GradHack</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoidGFrYXRzby1tb2xla2FuZSIsImEiOiJjanY0YWJsZGoxamp0NGVva3FpZ2hhbWYyIn0.zJG6l0EoKbG1zEmJH24tIQ</string>
 </resources>

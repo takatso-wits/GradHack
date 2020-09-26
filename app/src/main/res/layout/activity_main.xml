@@ -14,6 +14,17 @@
         android:layout_height="wrap_content"
         android:text="Find Pharmacy"
         android:id="@+id/btnPharm"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find GP"
+        android:id="@+id/btnGp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Screening"
+        android:id="@+id/btnScreening"/>
 
 
 
