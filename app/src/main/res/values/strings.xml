@@ -3,4 +3,8 @@
     <string name="mapbox_access_token">pk.eyJ1IjoidGFrYXRzby1tb2xla2FuZSIsImEiOiJjanY0YWJsZGoxamp0NGVva3FpZ2hhbWYyIn0.zJG6l0EoKbG1zEmJH24tIQ</string>
     <string name="user_location_permission_not_granted">Permission Denied</string>
     <string name="user_location_permission_explanation">Additional Information Needed</string>
+    <string name="accelerate_interpolator">Accelerate Interpolator</string>
+    <string name="linear_interpolator">Linear Interpolator</string>
+    <string name="bounce_interpolator">Bounce Interpolator</string>
+    <string name="decelerate_interpolator">Decelarate Interpolator</string>
 </resources>

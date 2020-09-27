@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "638694080678",
+    "firebase_url": "https://gradhack2020-bb0c5.firebaseio.com",
+    "project_id": "gradhack2020-bb0c5",
+    "storage_bucket": "gradhack2020-bb0c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638694080678:android:53f49674e30bd22f147467",
+        "android_client_info": {
+          "package_name": "co.micronano.gradhack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638694080678-2j7gc7ktvatot0t401aerv83odgn462v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.micronano.gradhack",
+            "certificate_hash": "86c3d5d439d83db96405827602d496ffa072a159"
+          }
+        },
+        {
+          "client_id": "638694080678-vl5gdjjgsgqvblcvv9m5cqc6l4p0gtab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQm3Ou7kXX6xWD6EjXhDAwW0e4O12azYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638694080678-vl5gdjjgsgqvblcvv9m5cqc6l4p0gtab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
